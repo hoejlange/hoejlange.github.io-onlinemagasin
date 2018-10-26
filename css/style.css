@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#F0EFED;
+        
+}
+/*navigationsbar*/
+
+nav {
+    width: 100%;
+    height: 110px;
+    background-color:#F5F0EA;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:flex;
+    justify-content: space-between;
+}
+
+nav > .logo {
+    padding:10;
+}
+
+nav > ul {
+    width: 40%;
+   margin-right: 10;
+    list-style-type: none;
+    line-height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+nav > ul > li > a {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    color: #CE9F73;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: "courier New";
+    font-size: 20px;
+}
+
+nav > ul > li > a:hover {
+    transition: .5s;
+    color: #CE9F73;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    width: 150px;
+    height: 0;
+    top: 70%;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #F5F0EA;
+}
+
+ul > li:hover .dropdown {
+    height: auto;
+}
+
+.dropdown a {
+    display: block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #CE9F73;
+    font-family: "courier New";
+    font-size: 15px;
+}
+
+.dropdown a:hover {
+    transition: .5s;
+    color: #CE9F73;
+    cursor: pointer;
+}
+
+.active {
+    transition: .5s;
+    font-weight: bold; 
+}
+
+/*baggrundbillede, undertitel og  pil*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background:url("../image/boy.on.beach.JPG") center no-repeat fixed;
+    background-size: cover;
+}
+
+header > h1 {
+    font-family: "amatic SC";
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-top: 250px;
+}
+
+header > .arrow {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/*polaroid-galleri*/
+
+.polaroid-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.polaroid-wrapper > .polaroid {
+    width: 300px;
+    height: 340px;
+    padding: 20px 20px 23px 20px;
+    margin: 0 15px 30px;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: "courier new";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.15s linear;
+}
+
+.polaroid-wrapper > .polaroid > img {
+    width: 95%;
+    height: 80%;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+.undersideheader {
+    background:none;
+    height:20vh;
+    margin-bottom: 50px;
+}
+
+.artikelheader {
+    background: none;
+    height:10vh;
+}
+
+article > .infotekst {
+   margin:150px;
+    font-family: "courier new";
+    font-size: 16px;
+    text-align: center;
+}
+.overskrift {
+    font-family: "amatic SC";
+    font-size: 50px;
+    color:#CE9F73;
+    text-align: justify;
+    margin-top:20px;
+}
+
+.artikel-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    padding:0 200px 0 200px;
+}
+
+.artikel-wrapper > .artikelbilleder {
+    width: 300px;
+    height: 340px;
+    padding: 20px 20px 10px 20px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: black;
+    font-family: "courier new";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.15s linear;
+}
+
+.artikel-wrapper > .artikelbilleder > img {
+    width: 95%;
+    height: 80%;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+.artikel {
+    margin:50px;
+    font-family:"courier new";
+    font-size: 16px;
+    text-align: justify;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+}
+
+.footer > img {
+    width:40px;
+    height:40px;
+}
+
+/*media queries*/
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+    nav {
+        height:150px;
+    }
+    nav > ul {
+    width:100%;
+
+    flex-direction: column;
+    float: none;
+    }
+    
+    nav > ul > li > {
+   font-size: 5px;
+    }
+    .logo {
+        display:none;
+    }
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
